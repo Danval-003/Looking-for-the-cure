@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Primer_jugador
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Primer_jugador\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Primer_jugador()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ moveAround()
+comment4.params=
+comment4.target=void\ moveVertically()
+comment5.params=
+comment5.target=void\ jump()
+numComments=6

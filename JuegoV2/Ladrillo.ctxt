@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Ladrillo
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Ladrillo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Ladrillo()
+comment1.text=\r\n\ Creates\ a\ long\ brick\ in\ the\ world\ which\ is\ the\ length\ of\ 5\ bricks.\ Has\ same\ mechanics\ as\ brick,\ it\ is\ just\ easier\ to\ place.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ This\ will\ change\ the\ image\ of\ the\ brick\ to\ the\ grey\ castle\ brick\ if\ the\ world\ is\ worldFour\ or\ the\ BossWorld\r\n\ Eliminates\ the\ need\ for\ extra\ coding\ by\ making\ a\ new\ class\ for\ the\ grey\ brick.\r\n
+numComments=3

@@ -1,0 +1,37 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=wide\ high\ cellSize\ scrollWide\ scrollHigh
+comment1.target=MyWorld(int,\ int,\ int,\ int,\ int)
+comment1.text=\r\npublic\ MyWorld(int\ wide,\ int\ high,\ int\ cellSize,\ int\ scrollWide,\ int\ scrollHigh)\r\n{\r\n\ \ \ super(cellSize\ \=\=\ 1\ ?\ wide\:(wide/2)*2+1,\ cellSize\ \=\=\ 1\ ?\ high\ \:\ (high/2)*2+1,\ cellSize,\ false);\r\n\ \ \ \ scrollType\ \=\ (scrollWide\ >\ wide\ ?\ 1\ \:\ 0)+(scrollHigh>high?2\:0);\r\n\ \ \ \ scrollingWidth\ \=\ scrollType%2\ \=\=\ 1\ ?\ scrollWide\ \:\ wide;\r\n\ \ \ \ scrollingHeight\ \=\ scrollType/2\ \=\=\ 1\ ?\ scrollHigh\ \:\ high;\r\n}\r\n
+comment10.params=
+comment10.target=void\ act()
+comment11.params=
+comment11.target=void\ scrollBackground()
+comment12.params=
+comment12.target=void\ scrollObjects()
+comment13.params=
+comment13.target=int\ getScrolledX()
+comment14.params=
+comment14.target=int\ getScrolledY()
+comment15.params=
+comment15.target=int\ getScrollingWidth()
+comment16.params=
+comment16.target=int\ getScrollingHeight()
+comment2.params=wide\ high\ cellSize\ scrollWide
+comment2.target=MyWorld(int,\ int,\ int,\ int)
+comment3.params=main\ xRange\ yRange
+comment3.target=void\ setMainActor(greenfoot.Actor,\ int,\ int)
+comment4.params=scrollingBackground
+comment4.target=void\ setScrollingBackground(greenfoot.GreenfootImage)
+comment5.params=fillImage
+comment5.target=void\ fillScrollingBackground(greenfoot.GreenfootImage)
+comment6.params=obj\ xLoc\ yLoc\ scroller
+comment6.target=void\ addObject(greenfoot.Actor,\ int,\ int,\ boolean)
+comment7.params=obj\ xLoc\ yLoc
+comment7.target=void\ addObject(greenfoot.Actor,\ int,\ int)
+comment8.params=obj
+comment8.target=void\ removeObject(greenfoot.Actor)
+comment9.params=objs
+comment9.target=void\ removeObjects(java.util.List)
+numComments=17
