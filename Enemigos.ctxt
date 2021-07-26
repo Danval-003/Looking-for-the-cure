@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Enemigos
+comment0.text=\r\nUniversidad\ del\ Valle\ de\ Guatemala\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n11\ calle\ 1579\ Zona\ 15\ Vista\ Hermosa\ III\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\nGuatemala,\ C.\ A.\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\nCurso\:\ Programaci\u00F3n\ orientada\ a\ objetos\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\nCatedr\u00E1tico\:\ Lynette\ Garcia\ Perez\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\nTrabajo\:\ Proyecto\ Juego\ en\ Greenfoot\r\nAutores\:\ Daniel\ Armando\ Valdez\ Reyes|Carn\u00E9\:\ 21240\ \ \ \ \ \ \ \ \ \ \ \ \r\nSecci\u00F3n\:\ 20\r\nDescripcion\:\ incluye\ a\ todos\ los\ enemigos.\r\n\u00DAltima\ fecha\ de\ modificaci\u00F3n\:\ 22\ de\ julio\ de\ 2021\ \ \ \ \ \ \ \ \ \ \ \ \r\nUniversidad\ del\ Valle\ 17\ de\ julio\ de\ 2021.\ Segundo\ ciclo\ \ \ \r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Enemigos\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=2

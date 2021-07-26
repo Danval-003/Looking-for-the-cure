@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Enfermo1
+comment0.text=\r\nUniversidad\ del\ Valle\ de\ Guatemala\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n11\ calle\ 1579\ Zona\ 15\ Vista\ Hermosa\ III\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\nGuatemala,\ C.\ A.\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\nCurso\:\ Programaci\u00F3n\ orientada\ a\ objetos\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\nCatedr\u00E1tico\:\ Lynette\ Garcia\ Perez\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\nTrabajo\:\ Proyecto\ Juego\ en\ Greenfoot\r\nAutores\:\ Daniel\ Armando\ Valdez\ Reyes|Carn\u00E9\:\ 21240\ \ \ \ \ \ \ \ \ \ \ \ \r\nSecci\u00F3n\:\ 20\r\nDescripcion\:\ Clase\ de\ enemigo\ simple\ del\ juego\r\n\u00DAltima\ fecha\ de\ modificaci\u00F3n\:\ 22\ de\ julio\ de\ 2021\ \ \ \ \ \ \ \ \ \ \ \ \r\nUniversidad\ del\ Valle\ 17\ de\ julio\ de\ 2021.\ Segundo\ ciclo\ \ \ \r\n
+comment1.params=
+comment1.target=Enfermo1()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ moveEnfermo()
+comment4.params=damage
+comment4.target=void\ hit(int)
+comment5.params=
+comment5.target=void\ switchImage()
+numComments=6
