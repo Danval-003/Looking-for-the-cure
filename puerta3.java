@@ -15,17 +15,20 @@ public class puerta3 extends Puertas
     public void act()
     {
         int scor;
+        int lives;
         if (Greenfoot.isKeyDown("space")){
              Actor Enfermo1 = getOneObjectAtOffset (getImage().getWidth()/2, 0, Primer_jugador.class);
             if(Enfermo1 != null)
                 {
                     scor=((Score) getWorld().getObjects(Score.class).get(0)).add(0);
-                    Greenfoot.setWorld(new Mundo4(scor));
+                    lives=((Vida) getWorld().getObjects(Vida.class).get(0)).add(0);
+                    Greenfoot.setWorld(new Mundo4(scor, lives));
                 }  
             Actor Enfermo2 = getOneObjectAtOffset (0, 0, Primer_jugador.class);
             if(Enfermo2 != null){
                     scor=((Score) getWorld().getObjects(Score.class).get(0)).add(0);
-                    Greenfoot.setWorld(new Mundo4(scor));
+                    lives=((Vida) getWorld().getObjects(Vida.class).get(0)).add(0);
+                    Greenfoot.setWorld(new Mundo4(scor, lives));
                 }
         }
     }

@@ -62,14 +62,15 @@ public class Primer_jugador extends Jugadores
         spas();
         if(anima>6) anima=0;
         anima++;
-        //prueba.playLoop();
-        //prueba.setVolume(43);
+        if(prueba.isPlaying()!=true){
+        prueba.playLoop();
+        prueba.setVolume(43);}
         // Add your actio code here.
     }
     public void compruebavida(){
     if (lives <=0){
     Greenfoot.setWorld(new Lose());
-    //prueba.stop();
+    prueba.stop();
     }
     }
     public void spas(){
@@ -120,16 +121,14 @@ public class Primer_jugador extends Jugadores
                 {
                     xSpeed = -26;
                     ySpeed = -27;
-                    lives=lives-1;
-                    ((Vida) getWorld().getObjects(Vida.class).get(0)).add(lives);
+                    ((Vida) getWorld().getObjects(Vida.class).get(0)).add(1);
                     return;
                 }  
             Actor Enfermo2 = getOneObjectAtOffset (-getImage().getWidth()/2, 0, Enfermo1.class);
             if(Enfermo2 != null){
                     xSpeed = +26;
                     ySpeed = -27;
-                    lives=lives-1;
-                    ((Vida) getWorld().getObjects(Vida.class).get(0)).add(lives);
+                    ((Vida) getWorld().getObjects(Vida.class).get(0)).add(1);
                     return;
                 }}
         
@@ -209,8 +208,11 @@ public class Primer_jugador extends Jugadores
             setLocation(getX(), getY()+1);
             ySpeed = 0;
         }
+        
         if (poder==false){
-            while (getOneObjectAtOffset (getImage().getWidth()/2, 0, bloqueBonus.class) != null)
+            
+        
+        while (getOneObjectAtOffset (getImage().getWidth()/2, 0, bloqueBonus.class) != null)
             {
             setLocation(getX()-1, getY());
 
@@ -223,7 +225,7 @@ public class Primer_jugador extends Jugadores
 
             xSpeed = 0;
         }
-            while (getOneObjectAtOffset (getImage().getWidth()/2, 0, bloqueBonus.class) != null)
+        while (getOneObjectAtOffset (getImage().getWidth()/2, 0, bloqueBonus.class) != null)
              {
             setLocation(getX()-1, getY());
 
@@ -236,20 +238,17 @@ public class Primer_jugador extends Jugadores
 
             xSpeed = 0;
             }
-            while (getOneObjectAtOffset (14, getImage().getHeight()/2 - 2, bloqueBonus.class)!= null)
+        while (getOneObjectAtOffset (0, -getImage().getHeight()/2+1, bloqueBonus.class)!= null)
             {
-                setLocation(getX(), getY()-1);
+                setLocation(getX(), getY()+1);
+                ySpeed = 0;
+            }
+            while (getOneObjectAtOffset (14, -getImage().getHeight()/2 - 2, bloqueBonus.class)!= null)
+            {
+                setLocation(getX(), getY()+1);
                 onGround = true;
                 ySpeed = 0;
             }
-    
-            while (getOneObjectAtOffset (14, getImage().getHeight()/2 - 2, bloqueBonus.class)!= null)
-            {
-                setLocation(getX(), getY()-1);
-                onGround = true;
-                ySpeed = 0;
-            }
-    
         while (getOneObjectAtOffset (-14, getImage().getHeight()/2 - 2, bloqueBonus.class)!= null)
             {
                 setLocation(getX(), getY()-1);
@@ -257,9 +256,10 @@ public class Primer_jugador extends Jugadores
                 ySpeed = 0;
             }
     
-        while (getOneObjectAtOffset (0, -getImage().getHeight()/2+1, bloqueBonus.class)!= null)
+            while (getOneObjectAtOffset (14, getImage().getHeight()/2 - 2, bloqueBonus.class)!= null)
             {
-                setLocation(getX(), getY()+1);
+                setLocation(getX(), getY()-1);
+                onGround = true;
                 ySpeed = 0;
             }
         }

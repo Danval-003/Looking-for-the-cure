@@ -34,7 +34,7 @@ public class Mundo2 extends MyWorld
         addObject(new Vida(),128,48, false);
         addObject(new Score(0),128,90, false);
     }
-    public Mundo2(int score)
+    public Mundo2(int score, int lives)
     {
         super(800,480,1, 1280,1024);
         addObject(new puerta2(),compox(1), compoy(13)-32);

@@ -17,6 +17,11 @@ public class Vida extends Interfaz
     {
         update_image();
     } 
+    public Vida(int livese) 
+    {   
+        lives=livese;
+        update_image();
+    } 
     private void update_image(){
         int estandar = 64;
         if (lives>0){
@@ -40,8 +45,9 @@ public class Vida extends Interfaz
         }
         
     }
-    public void add(int livese){
-        lives=livese;
+    public int add(int livese){
+        lives=lives-livese;
         update_image();
+        return lives;
     }
 }

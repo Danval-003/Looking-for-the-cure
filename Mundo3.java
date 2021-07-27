@@ -35,7 +35,7 @@ public class Mundo3 extends MyWorld
         addObject(new Vida(),128,48, false);
         addObject(new Score(0),128,90, false);
     }
-    public Mundo3(int score)
+    public Mundo3(int score, int lives)
     {
         super(800,480,1, 1280,1024);
         addObject(new puerta4(),compox(1), compoy(10)-32);
@@ -48,7 +48,7 @@ public class Mundo3 extends MyWorld
         borde();
         prepare();
         enemigo();
-        addObject(new Vida(),128,48, false);
+        addObject(new Vida(lives),128,48, false);
         addObject(new Score(score),128,90, false);
     }
     public int compoy(int fila){

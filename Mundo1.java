@@ -18,7 +18,6 @@ public class Mundo1 extends MyWorld
     int compoe;
     int x=1008;
     int y=720;
-    
     public Mundo1()
     {
         super(800,480,1, 1280,1024);
@@ -32,7 +31,8 @@ public class Mundo1 extends MyWorld
         borde();
         prepare();
         enemigo();
-        addObject(new Vida(),128,48, false);
+        
+        addObject(new Vida(3),128,48, false);
         addObject(new Score(0),128,90, false);
     }
     public int compoy(int fila){
