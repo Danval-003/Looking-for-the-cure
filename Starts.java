@@ -14,6 +14,6 @@ public class Starts extends Letras
      */
     public void act()
     {
-        // Add your action code here.
+
     }
 }
