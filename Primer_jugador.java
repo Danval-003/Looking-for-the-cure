@@ -41,7 +41,7 @@ public class Primer_jugador extends Jugadores
     boolean monedit=false;
     boolean monedota=false;
     
-    GreenfootSound prueba = new GreenfootSound("Musica batalla.mid");
+    
     public Primer_jugador(){
     xSpeed=0;
     }
@@ -57,20 +57,18 @@ public class Primer_jugador extends Jugadores
         ImagenL2= new GreenfootImage("Docder2.png");
         ImagenR3= new GreenfootImage("DocIz3.png");
         ImagenL3= new GreenfootImage("DocDer3.png");
+        if(anima>6) anima=0;
+        anima++;
         moveHorizontally();
         compruebavida();
         spas();
-        if(anima>6) anima=0;
-        anima++;
-        if(prueba.isPlaying()!=true){
-        prueba.playLoop();
-        prueba.setVolume(43);}
+        
         // Add your actio code here.
     }
     public void compruebavida(){
     if (lives <=0){
+    ((Musica) getWorld().getObjects(Musica.class).get(0)).musicon(false);
     Greenfoot.setWorld(new Lose());
-    prueba.stop();
     }
     }
     public void spas(){
@@ -86,14 +84,20 @@ public class Primer_jugador extends Jugadores
             World mundo;
             mundo=getWorld();
             mundo.removeObject(monedita);
-            punteo=punteo+100;
+            punteo=punteo+500;
         }
         Actor monedota = getOneObjectAtOffset (0, 0, MP.class);
         if(monedota!=null){
             World mundo;
             mundo=getWorld();
             mundo.removeObject(monedota);
-            punteo=punteo+500;
+            punteo=punteo+100;
+        }
+        Actor vacuna = getOneObjectAtOffset (0, 0,Vacuna.class);
+        if(vacuna!=null){
+            punteo=punteo+100;
+            ((Score) getWorld().getObjects(Score.class).get(0)).add(punteo);
+            punteo=0;
         }
         ((Score) getWorld().getObjects(Score.class).get(0)).add(punteo);
         punteo=0;
@@ -121,14 +125,14 @@ public class Primer_jugador extends Jugadores
                 {
                     xSpeed = -26;
                     ySpeed = -27;
-                    ((Vida) getWorld().getObjects(Vida.class).get(0)).add(1);
+                    lives=((Vida) getWorld().getObjects(Vida.class).get(0)).add(1);
                     return;
                 }  
             Actor Enfermo2 = getOneObjectAtOffset (-getImage().getWidth()/2, 0, Enfermo1.class);
             if(Enfermo2 != null){
                     xSpeed = +26;
                     ySpeed = -27;
-                    ((Vida) getWorld().getObjects(Vida.class).get(0)).add(1);
+                    lives=((Vida) getWorld().getObjects(Vida.class).get(0)).add(1);
                     return;
                 }}
         
@@ -170,12 +174,14 @@ public class Primer_jugador extends Jugadores
         }
     }
     public void anur(){
-        if (anima<3)setImage(ImagenR2);
-        else setImage(ImagenR3);
+        if (anima>2&&anima<4){setImage(ImagenR2); anima=0;}
+        else {setImage(ImagenR3);}
+        
     }
     public void anul(){
-        if (anima<3)setImage(ImagenL2);
-        else setImage(ImagenL3);
+        
+        if (anima>2&&anima<4){setImage(ImagenL2);anima=0;}
+        else {setImage(ImagenL3); }
     }
     private void moveVertically()
     {
@@ -268,8 +274,7 @@ public class Primer_jugador extends Jugadores
         if(Enfermo1 != null)
             {
                 ySpeed = -27;
-                lives=lives-1;
-                ((Vida) getWorld().getObjects(Vida.class).get(0)).add(lives);
+                lives=((Vida) getWorld().getObjects(Vida.class).get(0)).add(1);
                 return;
             }}
     }

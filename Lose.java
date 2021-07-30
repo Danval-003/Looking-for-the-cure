@@ -21,14 +21,13 @@ public class Lose extends World
      * Constructor for objects of class Lose.
      * 
      */
-    GreenfootSound theme = new GreenfootSound("Musica perdiste.mid");
     public Lose()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(850,550,1);
         getBackground().setColor(new Color(30,30,30));
         getBackground().fill();
         prepare();
+
     }
         /**
          * Prepare the world for the start of the program.
@@ -38,9 +37,6 @@ public class Lose extends World
         {
             Lost lost = new Lost();
             addObject(lost,425,220);
-            //lost.setLocation(452,280);
-            //lost.setLocation(456,280);
-    
     }
 
 }

@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class puerta3 here.
+ * Write a description of class puerta5 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class puerta3 extends Puertas
+public class puerta5 extends Puertas
 {
     /**
-     * Act - do whatever the puerta3 wants to do. This method is called whenever
+     * Act - do whatever the puerta5 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
@@ -23,14 +23,14 @@ public class puerta3 extends Puertas
                     scor=((Score) getWorld().getObjects(Score.class).get(0)).add(0);
                     lives=((Vida) getWorld().getObjects(Vida.class).get(0)).add(0);
                     ((Musica) getWorld().getObjects(Musica.class).get(0)).musicon(false);
-                    Greenfoot.setWorld(new Mundo4(scor, lives));
+                    Greenfoot.setWorld(new Mundo5(scor, lives));
                 }  
             Actor Enfermo2 = getOneObjectAtOffset (0, 0, Primer_jugador.class);
             if(Enfermo2 != null){
                     scor=((Score) getWorld().getObjects(Score.class).get(0)).add(0);
                     lives=((Vida) getWorld().getObjects(Vida.class).get(0)).add(0);
                     ((Musica) getWorld().getObjects(Musica.class).get(0)).musicon(false);
-                    Greenfoot.setWorld(new Mundo4(scor, lives));
+                    Greenfoot.setWorld(new Mundo5(scor, lives));
                 }
         }
     }

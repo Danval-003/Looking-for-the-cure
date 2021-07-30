@@ -22,12 +22,14 @@ public class puerta4 extends Puertas
                 {
                     scor=((Score) getWorld().getObjects(Score.class).get(0)).add(0);
                     lives=((Vida) getWorld().getObjects(Vida.class).get(0)).add(0);
+                    ((Musica) getWorld().getObjects(Musica.class).get(0)).musicon(false);
                     Greenfoot.setWorld(new Mundo3(scor, lives));
                 }  
             Actor Enfermo2 = getOneObjectAtOffset (0, 0, Primer_jugador.class);
             if(Enfermo2 != null){
                     scor=((Score) getWorld().getObjects(Score.class).get(0)).add(0);
                     lives=((Vida) getWorld().getObjects(Vida.class).get(0)).add(0);
+                    ((Musica) getWorld().getObjects(Musica.class).get(0)).musicon(false);
                     Greenfoot.setWorld(new Mundo3(scor, lives));
                 }
         }

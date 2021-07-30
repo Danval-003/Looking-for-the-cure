@@ -27,7 +27,7 @@ public class bloque extends Solid
     {
         int estandar = 64;
         estandar = estandar*tamaño;
-        GreenfootImage bricks = new GreenfootImage("Untitled 07-20-2021 06-20-06.png");
+        GreenfootImage bricks = new GreenfootImage("Bloque.png");
         GreenfootImage image = new GreenfootImage(64, estandar);
         int w = bricks.getWidth();
         for(int offset=0; offset<estandar; offset+=w) 

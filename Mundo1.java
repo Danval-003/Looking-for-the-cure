@@ -31,7 +31,7 @@ public class Mundo1 extends MyWorld
         borde();
         prepare();
         enemigo();
-        
+        addObject(new Musica(),128,48, false);
         addObject(new Vida(3),128,48, false);
         addObject(new Score(0),128,90, false);
     }

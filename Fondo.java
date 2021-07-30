@@ -25,7 +25,7 @@ public class Fondo extends Solid
     {
         int estandar = 64;
         estandar = estandar*tamaño;
-        GreenfootImage bricks = new GreenfootImage("Untitled 07-20-2021 06-20-06.png");
+        GreenfootImage bricks = new GreenfootImage("Ladrillo base.png");
         GreenfootImage image = new GreenfootImage(estandar, bricks.getHeight());
         int w = bricks.getWidth();
         for(int offset=0; offset<estandar; offset+=w) 
