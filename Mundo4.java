@@ -38,7 +38,7 @@ public class Mundo4 extends MyWorld
     public Mundo4(int score, int lives)
     {
         super(800,480,1, 1280,1024);
-        addObject(new puerta2(),compox(1), compoy(13)-32);
+        addObject(new puerta5(),compox(1), compoy(13)-32);
         addObject(new puerta2(),compox(13),624);
         addObject(new puerta2(),944,624);
         setMainActor(new Primer_jugador(), 200,180);

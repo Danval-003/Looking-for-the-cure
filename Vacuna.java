@@ -15,9 +15,9 @@ public class Vacuna extends Interfaz
     int scor;
     public void act()
     {
+        scor=((Score) getWorld().getObjects(Score.class).get(0)).add(0);
         Actor personaje = getOneObjectAtOffset (0, 0,Primer_jugador.class);
         if(personaje!=null){
-            scor=((Score) getWorld().getObjects(Score.class).get(0)).add(0);
             ((Musica) getWorld().getObjects(Musica.class).get(0)).musicon(false);
             Greenfoot.setWorld(new Ganar(scor));
 

@@ -15,12 +15,20 @@ public class Score2 extends Interfaz
     int score=0;
     public Score2(int score2)
     {
-        updateImage();
         score=score2;
+        updateImage();
+        
     }
     private void updateImage()
     {
-        setImage(new GreenfootImage("PUNTUACIÓN: "+score, 40, Color.BLACK, new Color(1, 40, 30,20)));
+        GreenfootImage Scorer= new GreenfootImage("PUNTUACIÓN: "+score, 40, Color.BLACK, new Color(1, 40, 30,20));
+        GreenfootImage vacuna= new GreenfootImage("Untitled 07-19-2021 12-47-29.png");
+        int w= Scorer.getWidth();
+        GreenfootImage image = new GreenfootImage(w+128, vacuna.getHeight());
+        image.drawImage(Scorer, 0, 32);
+        image.drawImage(vacuna, w, 0);
+        setImage(image);
+        
     }
     public int add(int punteo){
         score=punteo+score;
