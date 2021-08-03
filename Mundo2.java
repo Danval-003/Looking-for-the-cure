@@ -21,7 +21,7 @@ public class Mundo2 extends MyWorld
     public Mundo2()
     {
         super(800,480,1, 1280,1024);
-        addObject(new puerta1(),compox(1), compoy(13)-32);
+        addObject(new puerta5(),compox(1), compoy(13)-32);
         addObject(new puerta4(),compox(13),624);
         addObject(new puerta2(),944,624);
         setMainActor(new Primer_jugador(), 200,180);

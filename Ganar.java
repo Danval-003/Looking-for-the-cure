@@ -17,7 +17,6 @@ public class Ganar extends World
     {    
         super(850,550,1);
         addObject(new Score2(score),440,400);
-        prepare();
     }
 
     public Ganar()
@@ -38,14 +37,5 @@ public class Ganar extends World
                 theme.stop();
             }
         }
-    }
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
-    private void prepare()
-    {
-        Vacuna vacuna = new Vacuna();
-        addObject(vacuna,581,399);
     }
 }
